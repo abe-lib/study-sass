@@ -16,15 +16,31 @@ body {
 }
 
 .m-list-card {
-  
+  &__item {
+    border: 5px solid #999;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 24px;
+  }
+  &__item--finish {
+    @extend .m-list-card__item;
+  }
 }
 
 .m-tag {
-  
+  li {
+    // inline -> 横並び（マージン・パッディング）
+    // inline-block -> インラインの並びで、block要素っぽくなる
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 3px;
+    padding: 0 8px;
+    color: red;
+  }
 }
 
 .m-flex-box {
-  
+  display: flex;
 }
 
 .m-bookmark {
