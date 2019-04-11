@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  gulp:
+    image: ellerbrock/alpine-gulp-sass:latest
+    volumes:
+      - ${DIR_SASS}:/site/sass
+      - ${DIR_CSS}:/site/css
+    environment:
+      - SASS=${FILES_SASS}
+      - CSS=${DIR_CSS}
+      - GULP_DEBUG=${GULP_DEBUG}
+    networks:
+      - webdev
+networks:
+  webdev:
+    driver: bridge
