@@ -4469,4 +4469,10 @@ body {
   color: red; }
 
 .m-flex-box {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+
+.btn {
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 4px 32px; }
