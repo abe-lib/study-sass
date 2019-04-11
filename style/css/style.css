@@ -4454,3 +4454,19 @@ body {
   margin: 0 auto;
   min-height: 100%;
   padding: 20px; }
+
+.m-list-card__item, .m-list-card__item--finish {
+  border: 5px solid #999;
+  padding: 8px;
+  border-radius: 3px;
+  margin-bottom: 24px; }
+
+.m-tag li {
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 0 8px;
+  color: red; }
+
+.m-flex-box {
+  display: flex; }
