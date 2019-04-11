@@ -11,26 +11,35 @@ body {
   padding: 20px;
 }
 
+body {
+  background-color: #FAF;
+}
+
 .m-block {
-  
+  padding: 5px;
+  background-color: #FFF;
 }
 
 .m-list-card {
-  
+
 }
 
 .m-tag {
-  
+  ul {
+    li {
+      display: inline;
+    }
+  }
 }
 
 .m-flex-box {
-  
+  display: flex;
 }
 
 .m-bookmark {
-  
+
 }
 
 .btn {
-  
+
 }
