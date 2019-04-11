@@ -4460,10 +4460,22 @@ body {
 
 .m-block {
   padding: 5px;
-  background-color: #FFF; }
+  background-color: #FFF;
+  margin-bottom: 10px; }
 
 .m-tag ul li {
   display: inline; }
 
 .m-flex-box {
-  display: flex; }
+  display: flex;
+  justify-content: space-between; }
+  .m-flex-box__col6 {
+    background-color: aqua;
+    width: 48%; }
+
+.text-center {
+  text-align: center; }
+
+.m-bookmark {
+  margin-left: auto;
+  padding-right: 5px; }

@@ -18,10 +18,10 @@ body {
 .m-block {
   padding: 5px;
   background-color: #FFF;
+  margin-bottom: 10px;
 }
 
 .m-list-card {
-
 }
 
 .m-tag {
@@ -34,10 +34,20 @@ body {
 
 .m-flex-box {
   display: flex;
+  justify-content: space-between;
+  &__col6{
+    background-color: aqua;
+    width: 48%;
+  }
+}
+
+.text-center{
+  text-align: center;
 }
 
 .m-bookmark {
-
+  margin-left: auto;
+  padding-right: 5px;
 }
 
 .btn {
