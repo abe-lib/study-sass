@@ -4457,6 +4457,8 @@ body {
 
 #trigger {
   display: none; }
+  #trigger:checked ~ .modal {
+    display: block; }
 
 .btn-modal-open {
   display: block;
@@ -4476,8 +4478,5 @@ body {
   .modal__content {
     overflow: auto;
     text-align: center; }
-
-#trigger:checked ~ .modal {
-  display: block; }
 
 @keyframes show {}

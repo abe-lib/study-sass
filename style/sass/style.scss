@@ -19,6 +19,9 @@ $color: #66A5D6;
 
 #trigger {
   display: none;
+  &:checked ~ .modal {
+    display: block;
+  }
 }
 .btn-modal-open {
   display: block;
@@ -48,9 +51,6 @@ $color: #66A5D6;
   &__close {
   }
   
-}
-#trigger:checked ~ .modal {
-  display: block;
 }
 
 @keyframes show{
