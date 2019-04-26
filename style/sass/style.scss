@@ -42,12 +42,24 @@ $color: #66A5D6;
 }
 .modal {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   
   &__overlay {
   }
   &__bg {
   }
   &__body {
+    position: absolute;
+    margin-top: -150px;
+    margin-left: -150px;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
   }
   &__content {
     overflow: auto;
