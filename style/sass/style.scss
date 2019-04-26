@@ -8,7 +8,7 @@ body {
   max-width: 768px;
   margin: 0 auto;
   min-height: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 //setting系
 @mixin fs($size, $base: 16) {
@@ -17,109 +17,42 @@ body {
 }
 $color: #66A5D6;
 
-
-.m-block {
-  border: 1px solid #DBDBDB;
-  background-color: #fff;
-  padding: 12px;
-  border-radius: 5px;
-  p {
-    @include fs(14);
-  }
+#trigger {
+  display: none;
 }
-.m-list-card {
-  &__item {
-    margin-bottom: 16px;
-    .company {
-      @include fs(14);
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .position {
-      @include fs(12);
-      margin-bottom: 8px;
-    }
-    .sub-info {
-      margin-bottom: 12px;
-    }
-    .income {
-      @include fs(12);
-    }
-  }
-  &__item--finish {
-    @extend .m-list-card__item;
-    .m-block {
-      background-color: #eee;
-    }
-    .btn--primary {
-      background-color: #aaa;
-      pointer-events: none;
-    }
-  }
-}
-
-.m-tag {
-  margin-bottom: 8px;
-  ul {
-    margin: -5px 0 0 -5px;
-    font-size: 0;
-  }
-  li {
-    display: inline-block;
-    margin: 5px 0 0 5px;
-    border: 1px solid #C97D7D;
-    border-radius: 3px;
-    
-    span {
-      color: #C97D7D;
-      @include fs(11);
-      line-height: 22px;
-      display: block;
-      padding: 0 8px;
-    }
-  }
-}
-.m-flex-box {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  &__col6 {
-    width: 48%;
-  }
-}
-.m-bookmark {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  i::before {
-    color: #B4B4B4;
-    @include fs(18);
-    margin-right: 4px;
-  }
-  span {
-    @include fs(12);
-    color: #848484;
-  }
-}
-.btn {
-  display: inline-block;
-  border: 1px solid #DBDBDB;
-  border-radius: 3px;
-  @include fs(12);
-  text-decoration: none;
-  padding: 8px 16px;
+.btn-modal-open {
+  display: block;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  background-color: $color;
+  color: #fff;
   text-align: center;
-  color: $color;
-  cursor: pointer;
-  &--block {
-    display: block;
-    width: 100%;
+  border-radius: 10px;
+  @include fs(18);
+  margin: 0 auto;
+}
+.modal {
+  display: none;
+  
+  &__overlay {
   }
-  &--primary {
-    color: #fff;
-    background: $color;
-    border: none;
+  &__bg {
   }
+  &__body {
+  }
+  &__content {
+    overflow: auto;
+    text-align: center;
+  }
+  &__close {
+  }
+  
+}
+#trigger:checked ~ {
+  
+}
+
+@keyframes show{
+  
 }
