@@ -49,8 +49,8 @@ $color: #66A5D6;
   }
   
 }
-#trigger:checked ~ {
-  
+#trigger:checked ~ .modal {
+  display: block;
 }
 
 @keyframes show{
