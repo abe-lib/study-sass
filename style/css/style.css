@@ -4454,3 +4454,96 @@ body {
   margin: 0 auto;
   min-height: 100%;
   padding: 20px; }
+
+.m-block {
+  border: 1px solid #DBDBDB;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px; }
+  .m-block p {
+    font-size: 14px;
+    font-size: 0.875rem; }
+
+.m-list-card__item, .m-list-card__item--finish {
+  margin-bottom: 16px; }
+  .m-list-card__item .company, .m-list-card__item--finish .company {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 5px; }
+  .m-list-card__item .position, .m-list-card__item--finish .position {
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin-bottom: 8px; }
+  .m-list-card__item .sub-info, .m-list-card__item--finish .sub-info {
+    margin-bottom: 12px; }
+  .m-list-card__item .income, .m-list-card__item--finish .income {
+    font-size: 12px;
+    font-size: 0.75rem; }
+
+.m-list-card__item--finish .m-block {
+  background-color: #eee; }
+
+.m-list-card__item--finish .btn--primary {
+  background-color: #aaa;
+  pointer-events: none; }
+
+.m-tag {
+  margin-bottom: 8px; }
+  .m-tag ul {
+    margin: -5px 0 0 -5px;
+    font-size: 0; }
+  .m-tag li {
+    display: inline-block;
+    margin: 5px 0 0 5px;
+    border: 1px solid #C97D7D;
+    border-radius: 3px; }
+    .m-tag li span {
+      color: #C97D7D;
+      font-size: 11px;
+      font-size: 0.6875rem;
+      line-height: 22px;
+      display: block;
+      padding: 0 8px; }
+
+.m-flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .m-flex-box__col6 {
+    width: 48%; }
+
+.m-bookmark {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start; }
+  .m-bookmark i::before {
+    color: #B4B4B4;
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin-right: 4px; }
+  .m-bookmark span {
+    font-size: 12px;
+    font-size: 0.75rem;
+    color: #848484; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-align: center;
+  color: #66A5D6;
+  cursor: pointer; }
+  .btn--block {
+    display: block;
+    width: 100%; }
+  .btn--primary {
+    color: #fff;
+    background: #66A5D6;
+    border: none; }
